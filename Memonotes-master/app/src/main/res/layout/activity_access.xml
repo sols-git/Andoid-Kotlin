@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".AccessActivity">
+
+    <TextView
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Введите пинкод"
+        android:textAlignment="center"
+        android:textColor="@color/TextButton"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/pinaccessTv"
+        android:layout_width="208dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/selector_layout_rounded"
+        android:clickable="false"
+        android:ems="10"
+        android:inputType="number|numberPassword"
+        android:maxLength="4"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/fragment"
+        app:layout_constraintEnd_toEndOf="@+id/fragment"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/fragment"
+        app:layout_constraintTop_toBottomOf="@+id/textview_newpass"
+        tools:text="5555" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:textColor="@color/TextButton" />
+
+    <TextView
+        android:id="@+id/texterr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="?attr/colorError" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:textColor="@color/TextButton" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/selector_rounded"
+                android:onClick="onKeyPrerssed"
+                android:text="7"
+                android:textColor="@color/TextButton"
+                android:textSize="24sp" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/selector_rounded"
+                android:onClick="onKeyPrerssed"
+                android:text="8"
+                android:textColor="@color/TextButton"
+                android:textSize="24sp" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/selector_rounded"
+                android:onClick="onKeyPrerssed"
+                android:text="9"
+                android:textColor="@color/TextButton"
+                android:textSize="24sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/selector_rounded"
+                android:onClick="onKeyPrerssed"
+                android:text="4"
+                android:textColor="@color/TextButton"
+                android:textSize="24sp" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/selector_rounded"
+                android:onClick="onKeyPrerssed"
+                android:text="5"
+                android:textColor="@color/TextButton"
+                android:textSize="24sp" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/selector_rounded"
+                android:onClick="onKeyPrerssed"
+                android:text="6"
+                android:textColor="@color/TextButton"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/selector_rounded"
+                android:onClick="onKeyPrerssed"
+                android:text="1"
+                android:textColor="@color/TextButton"
+                android:textSize="24sp" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/selector_rounded"
+                android:onClick="onKeyPrerssed"
+                android:text="2"
+                android:textColor="@color/TextButton"
+                android:textSize="24sp" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/selector_rounded"
+                android:onClick="onKeyPrerssed"
+                android:text="3"
+                android:textColor="@color/TextButton"
+                android:textSize="24sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/selector_rounded"
+                android:onClick="onKeyPrerssed"
+                android:text="0"
+                android:textColor="@color/TextButton"
+                android:textSize="24sp" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/selector_rounded"
+                android:hapticFeedbackEnabled="true"
+                android:onClick="onKeyPrerssed"
+                android:text="@string/backarrow"
+                android:textColor="@color/TextButton"
+                android:textSize="24sp" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

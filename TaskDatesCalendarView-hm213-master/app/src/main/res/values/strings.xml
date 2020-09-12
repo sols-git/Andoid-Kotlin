@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TaskDatesCalendarView-hm213</string>
+    <string name="app_chooseStartDate">Дата-время старта задачи: </string>
+    <string name="app_chooseEndDate">Дата-время окончания задач: </string>
+    <string name="app_btnOK">OK</string>
+
+</resources>

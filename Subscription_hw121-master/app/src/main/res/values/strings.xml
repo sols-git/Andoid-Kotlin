@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Subscription_hw121</string>
+    <string name="app_subscription">Подписка</string>
+    <string name="app_user">Имя пользователя</string>
+    <string name="app_email">Электронная почта</string>
+    <string name="app_str_result_1">Подписка на рассылку успешно оформлена для пользователя</string>
+    <string name="app_str_result_2">на электронный адрес</string>
+    <string name="app_button_ok">ОК</string>
+    <string name="app_button_clear">Очистить</string>
+    <string name="app_edit_name">Введите имя пользователя</string>
+    <string name="app_edit_email">Введите email</string>
+
+
+</resources>

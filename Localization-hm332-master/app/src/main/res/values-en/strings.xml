@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Localization-hm332</string>
+    <string name="text_ru">Description \n \n If a mobile application enters the international market, \n
+         he needs localization for different languages. \n \n Create a page with the following elements: \n \n
+         Spinner with a list of languages - Russian and English. \n \n
+         OK button. By clicking on this button, the language is switched throughout the application. \n
+         Add text on the page to display in English and Russian.</string>
+
+    <string-array name="language">
+        <item>Russian</item>
+        <item>French</item>
+    </string-array>
+
+</resources>

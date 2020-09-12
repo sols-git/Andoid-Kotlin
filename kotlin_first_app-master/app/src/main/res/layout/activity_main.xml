@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/generalPostLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="?attr/colorButtonNormal">
+
+                <TextView
+                    android:id="@+id/count_likesTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toEndOf="@+id/likeBtn"
+                    app:layout_constraintTop_toBottomOf="@+id/postTv"
+                    tools:text="10" />
+
+                <TextView
+                    android:id="@+id/dataTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:textColor="@color/colorDate"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toEndOf="@+id/imgavatar"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="10 January 2020" />
+
+                <TextView
+                    android:id="@+id/postTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/userTv"
+                    tools:text="Post" />
+
+                <TextView
+                    android:id="@+id/count_shareTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/shareBtn"
+                    app:layout_constraintTop_toBottomOf="@+id/postTv"
+                    tools:text="2" />
+
+                <ImageButton
+                    android:id="@+id/shareBtn"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginBottom="16dp"
+                    android:onClick="clickShare"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/postTv"
+                    app:srcCompat="@drawable/ic_share_black_24dp" />
+
+                <TextView
+                    android:id="@+id/count_commentsTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toEndOf="@+id/commentsBtn"
+                    app:layout_constraintTop_toBottomOf="@+id/postTv"
+                    tools:text="8" />
+
+                <ImageButton
+                    android:id="@+id/commentsBtn"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="100dp"
+                    android:onClick="clickMessage"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/postTv"
+                    app:srcCompat="@drawable/ic_chat_bubble_black_24dp" />
+
+                <ImageButton
+                    android:id="@+id/likeBtn"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="160dp"
+                    android:onClick="clickLikes"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/postTv"
+                    app:srcCompat="@drawable/ic_favorite_black_24dp" />
+
+                <ImageView
+                    android:id="@+id/imgavatar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_profile" />
+
+                <TextView
+                    android:id="@+id/userTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    app:layout_constraintStart_toEndOf="@+id/imgavatar"
+                    app:layout_constraintTop_toBottomOf="@+id/dataTv"
+                    tools:text="Autor" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/EventPostLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="?attr/colorButtonNormal">
+
+                <ImageView
+                    android:id="@+id/pin_event3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/ic_place_red_24dp" />
+
+                <TextView
+                    android:id="@+id/count_likesTv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toEndOf="@+id/likeBtn3"
+                    app:layout_constraintTop_toBottomOf="@+id/postTv3"
+                    tools:text="10" />
+
+                <TextView
+                    android:id="@+id/dataTv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:textColor="@color/colorDate"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toEndOf="@+id/imgavatar3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="10 January 2020" />
+
+                <TextView
+                    android:id="@+id/postTv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/userTv3"
+                    tools:text="Post" />
+
+                <TextView
+                    android:id="@+id/count_shareTv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/shareBtn3"
+                    app:layout_constraintTop_toBottomOf="@+id/postTv3"
+                    tools:text="2" />
+
+                <ImageButton
+                    android:id="@+id/shareBtn3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginBottom="16dp"
+                    android:onClick="clickShare3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/postTv3"
+                    app:srcCompat="@drawable/ic_share_black_24dp" />
+
+                <TextView
+                    android:id="@+id/count_commentsTv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toEndOf="@+id/commentsBtn3"
+                    app:layout_constraintTop_toBottomOf="@+id/postTv3"
+                    tools:text="8" />
+
+                <ImageButton
+                    android:id="@+id/commentsBtn3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="100dp"
+                    android:onClick="clickMessage3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/postTv3"
+                    app:srcCompat="@drawable/ic_chat_bubble_black_24dp" />
+
+                <ImageButton
+                    android:id="@+id/likeBtn3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="160dp"
+                    android:onClick="clickLikes3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/postTv3"
+                    app:srcCompat="@drawable/ic_favorite_black_24dp" />
+
+                <ImageView
+                    android:id="@+id/imgavatar3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_profile" />
+
+                <TextView
+                    android:id="@+id/userTv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    app:layout_constraintStart_toEndOf="@+id/imgavatar3"
+                    app:layout_constraintTop_toBottomOf="@+id/dataTv3"
+                    tools:text="Autor" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="?attr/colorButtonNormal">
+
+                <TextView
+                    android:id="@+id/count_likesTv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toEndOf="@+id/likeBtn2"
+                    app:layout_constraintTop_toBottomOf="@+id/postTv2"
+                    tools:text="10" />
+
+                <TextView
+                    android:id="@+id/dataTv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:textColor="@color/colorDate"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toEndOf="@+id/imgavatar2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="10 January 2020" />
+
+                <TextView
+                    android:id="@+id/postTv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cap_youtube_img"
+                    tools:text="Post" />
+
+                <TextView
+                    android:id="@+id/count_shareTv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/shareBtn2"
+                    app:layout_constraintTop_toBottomOf="@+id/postTv2"
+                    tools:text="2" />
+
+                <ImageButton
+                    android:id="@+id/shareBtn2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="16dp"
+                    android:onClick="clickShare2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/postTv2"
+                    app:srcCompat="@drawable/ic_share_black_24dp" />
+
+                <TextView
+                    android:id="@+id/count_commentsTv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toEndOf="@+id/commentsBtn2"
+                    app:layout_constraintTop_toBottomOf="@+id/postTv2"
+                    tools:text="8" />
+
+                <ImageButton
+                    android:id="@+id/commentsBtn2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="90dp"
+                    android:layout_marginTop="14dp"
+                    android:onClick="clickMessage2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/postTv2"
+                    app:srcCompat="@drawable/ic_chat_bubble_black_24dp" />
+
+                <ImageButton
+                    android:id="@+id/likeBtn2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="14dp"
+                    android:onClick="clickLikes2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/postTv2"
+                    app:srcCompat="@drawable/ic_favorite_black_24dp" />
+
+                <ImageView
+                    android:id="@+id/imgavatar2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_profile" />
+
+                <TextView
+                    android:id="@+id/userTv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    app:layout_constraintStart_toEndOf="@+id/imgavatar2"
+                    app:layout_constraintTop_toBottomOf="@+id/dataTv2"
+                    tools:text="Autor" />
+
+                <ImageView
+                    android:id="@+id/cap_youtube_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/cap_youtube"
+                    android:onClick="onClickImgYoutube"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/userTv2" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

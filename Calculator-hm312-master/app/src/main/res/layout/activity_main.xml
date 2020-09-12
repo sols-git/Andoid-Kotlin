@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/clcdispl"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/stack"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/inputkey"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/background_light"
+            android:textSize="64sp" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/keyplate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/clcdispl"
+        android:layout_alignParentLeft="true"
+        android:layout_toStartOf="@id/actionplate"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/keyClear"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/silver"
+                android:fontFamily="monospace"
+                android:onClick="onOperationClick"
+                android:text="@string/app_C_key"
+                android:textColor="@color/black"
+                android:textSize="48sp" />
+
+            <Button
+                android:id="@+id/keyPlusMines"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/silver"
+                android:fontFamily="monospace"
+                android:onClick="onOperationClick"
+                android:text="@string/app_PlMi_key"
+                android:textColor="@color/black"
+                android:textSize="48sp" />
+
+            <Button
+                android:id="@+id/keyPercent"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/silver"
+                android:fontFamily="monospace"
+                android:onClick="onOperationClick"
+                android:text="@string/app_Pers_key"
+                android:textColor="@color/black"
+                android:textSize="48sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/key7"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/silver"
+                android:fontFamily="monospace"
+                android:onClick="onNumberClick"
+                android:text="@string/app_7_key"
+                android:textColor="@color/black"
+                android:textSize="48sp" />
+
+            <Button
+                android:id="@+id/key8"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/silver"
+                android:fontFamily="monospace"
+                android:onClick="onNumberClick"
+                android:text="@string/app_8_key"
+                android:textColor="@color/black"
+                android:textSize="48sp" />
+
+            <Button
+                android:id="@+id/key9"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/silver"
+                android:fontFamily="monospace"
+                android:onClick="onNumberClick"
+                android:text="@string/app_9_key"
+                android:textColor="@color/black"
+                android:textSize="48sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/key4"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/silver"
+                android:fontFamily="monospace"
+                android:onClick="onNumberClick"
+                android:text="@string/app_4_key"
+                android:textColor="@color/black"
+                android:textSize="48sp" />
+
+            <Button
+                android:id="@+id/key5"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/silver"
+                android:fontFamily="monospace"
+                android:onClick="onNumberClick"
+                android:text="@string/app_5_key"
+                android:textColor="@color/black"
+                android:textSize="48sp" />
+
+            <Button
+                android:id="@+id/key6"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/silver"
+                android:fontFamily="monospace"
+                android:onClick="onNumberClick"
+                android:text="@string/app_6_key"
+                android:textColor="@color/black"
+                android:textSize="48sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/key1"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/silver"
+                android:fontFamily="monospace"
+                android:onClick="onNumberClick"
+                android:text="@string/app_1_key"
+                android:textColor="@color/black"
+                android:textSize="48sp" />
+
+            <Button
+                android:id="@+id/key2"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/silver"
+                android:fontFamily="monospace"
+                android:onClick="onNumberClick"
+                android:text="@string/app_2_key"
+                android:textColor="@color/black"
+                android:textSize="48sp" />
+
+            <Button
+                android:id="@+id/key3"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/silver"
+                android:fontFamily="monospace"
+                android:onClick="onNumberClick"
+                android:text="@string/app_3_key"
+                android:textColor="@color/black"
+                android:textSize="48sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/key0"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@color/silver"
+                android:fontFamily="monospace"
+                android:onClick="onNumberClick"
+                android:text="@string/app_0_key"
+                android:textColor="@color/black"
+                android:textSize="48sp" />
+
+            <Button
+                android:id="@+id/keydot"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="2"
+                android:background="@color/silver"
+                android:fontFamily="monospace"
+                android:onClick="onNumberClick"
+                android:text="@string/app_Dot_key"
+                android:textColor="@color/black"
+                android:textSize="48sp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/actionplate"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/clcdispl"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/keyDiv"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_orange_dark"
+            android:fontFamily="monospace"
+            android:onClick="onOperationClick"
+            android:text="@string/app_Div_key"
+            android:textColor="@color/white"
+            android:textSize="48sp" />
+
+        <Button
+            android:id="@+id/keyMulty"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_orange_dark"
+            android:fontFamily="monospace"
+            android:onClick="onOperationClick"
+            android:text="@string/app_Multy_key"
+            android:textColor="@color/white"
+            android:textSize="48sp" />
+
+        <Button
+            android:id="@+id/keyMinus"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_orange_dark"
+            android:fontFamily="monospace"
+            android:onClick="onOperationClick"
+            android:text="@string/app_Min_key"
+            android:textColor="@color/white"
+            android:textSize="48sp" />
+
+        <Button
+            android:id="@+id/keyPlus"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_orange_dark"
+            android:fontFamily="monospace"
+            android:onClick="onOperationClick"
+            android:text="@string/app_Plus_key"
+            android:textColor="@color/white"
+            android:textSize="48sp" />
+
+        <Button
+            android:id="@+id/keyEqual"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_orange_dark"
+            android:fontFamily="monospace"
+            android:onClick="onOperationClick"
+            android:text="@string/app_Equal_key"
+            android:textColor="@color/white"
+            android:textSize="48sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

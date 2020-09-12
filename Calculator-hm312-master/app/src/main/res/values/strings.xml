@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Calculator-hm312</string>
+    <string name="app_0_key">0</string>
+    <string name="app_1_key">1</string>
+    <string name="app_2_key">2</string>
+    <string name="app_3_key">3</string>
+    <string name="app_4_key">4</string>
+    <string name="app_5_key">5</string>
+    <string name="app_6_key">6</string>
+    <string name="app_7_key">7</string>
+    <string name="app_8_key">8</string>
+    <string name="app_9_key">9</string>
+    <string name="app_C_key">C</string>
+    <string name="app_PlMi_key">±</string>
+    <string name="app_Pers_key">%</string>
+    <string name="app_Div_key">÷</string>
+    <string name="app_Min_key">-</string>
+    <string name="app_Plus_key">+</string>
+    <string name="app_Equal_key">=</string>
+    <string name="app_Multy_key">x</string>
+    <string name="app_Dot_key">.</string>
+
+
+
+
+</resources>

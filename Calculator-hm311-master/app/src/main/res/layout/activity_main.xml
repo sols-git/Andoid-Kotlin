@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/row1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8">
+
+        <TextView
+            android:id="@+id/display"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:text="0"
+            android:textAlignment="textEnd"
+            android:textSize="64sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/key7"
+            style="@android:style/Widget.DeviceDefault.Button.Inset"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick ="onKey7"
+            android:text="7"
+            android:textAlignment="center"
+            android:textSize="64sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/key8"
+            style="@android:style/Widget.DeviceDefault.Button.Inset"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick ="onKey8"
+            android:text="8"
+            android:textAlignment="center"
+            android:textSize="64sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/key9"
+            style="@android:style/Widget.DeviceDefault.Button.Inset"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick ="onKey9"
+            android:text="9"
+            android:textAlignment="center"
+            android:textSize="64sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/key4"
+            style="@android:style/Widget.DeviceDefault.Button.Inset"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick ="onKey4"
+            android:text="4"
+            android:textAlignment="center"
+            android:textSize="64sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/key5"
+            style="@android:style/Widget.DeviceDefault.Button.Inset"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick ="onKey5"
+            android:text="5"
+            android:textAlignment="center"
+            android:textSize="64sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/key6"
+            style="@android:style/Widget.DeviceDefault.Button.Inset"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick ="onKey6"
+            android:text="6"
+            android:textAlignment="center"
+            android:textSize="64sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/key1"
+            style="@android:style/Widget.DeviceDefault.Button.Inset"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick ="onKey1"
+            android:text="1"
+            android:textAlignment="center"
+            android:textSize="64sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/key2"
+            style="@android:style/Widget.DeviceDefault.Button.Inset"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick ="onKey2"
+            android:text="2"
+            android:textAlignment="center"
+            android:textSize="64sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/key3"
+            style="@android:style/Widget.DeviceDefault.Button.Inset"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick ="onKey3"
+            android:text="3"
+            android:textAlignment="center"
+            android:textSize="64sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/key0"
+            style="@android:style/Widget.DeviceDefault.Button.Inset"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick ="onKey0"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="64sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/keyDot"
+            style="@android:style/Widget.DeviceDefault.Button.Inset"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:onClick ="onKeyDot"
+            android:text="."
+            android:textAlignment="center"
+            android:textSize="64sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

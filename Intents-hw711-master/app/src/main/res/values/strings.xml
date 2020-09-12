@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Intents-hw711</string>
+    <string name="btnsinhro">Синхронизация</string>
+    <string name="morning">Утренняя синхронизация</string>
+    <string name="afternoon">Обеденная синхронизация</string>
+    <string name="evening">Вчереняя синхронизация</string>
+    <string name="start">Запуск</string>
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Photoalbum_hm122</string>
+    <string name="app_title">Просмотр фото</string>
+    <string name="app_back">Назад</string>
+    <string name="app_forward">Вперед</string>
+
+
+</resources>

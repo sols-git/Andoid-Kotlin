@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context=".PincodeEditor">
+
+    <ImageView
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:onClick="onClickBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_left" />
+
+    <ToggleButton
+        android:id="@+id/btnaccviewcurrpass"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/btn_toogle"
+        android:checked="false"
+        android:text="ToggleButton"
+        android:textAllCaps="false"
+        android:textIsSelectable="false"
+        android:textOff=" "
+        android:textOn=" "
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/oldpass"
+        app:layout_constraintEnd_toEndOf="@id/oldpass"
+        app:layout_constraintTop_toTopOf="@+id/oldpass" />
+
+    <TextView
+        android:id="@+id/textview_titleeditpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/titleeditpass"
+        android:textColor="@color/TextBlue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textview_oldpass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline" />
+
+    <TextView
+        android:id="@+id/textview_oldpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/tv_oldpass"
+        android:textColor="@color/TextBlue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/oldpass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_titleeditpass" />
+
+    <TextView
+        android:id="@+id/oldpass"
+        android:layout_width="216dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/selector_layout_rounded"
+        android:ems="10"
+        android:inputType="numberPassword"
+        android:maxLength="4"
+        android:onClick="onClickFocusToOldPassedit"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/textview_newpass"
+        app:layout_constraintEnd_toEndOf="@+id/passedit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/passedit"
+        app:layout_constraintTop_toBottomOf="@+id/textview_oldpass"
+        tools:text="5555" />
+
+    <TextView
+        android:id="@+id/textview_newpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/pinedit"
+        android:textColor="@color/TextBlue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/passedit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oldpass" />
+
+    <TextView
+        android:id="@+id/passedit"
+        android:layout_width="216dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/selector_layout_rounded"
+        android:clickable="false"
+        android:ems="10"
+        android:inputType="number|numberPassword"
+        android:maxLength="4"
+        android:onClick="onClickFocusToPassedit"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/fragment"
+        app:layout_constraintEnd_toEndOf="@+id/fragment"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/fragment"
+        app:layout_constraintTop_toBottomOf="@+id/textview_newpass"
+        tools:text="5555" />
+
+    <ToggleButton
+        android:id="@+id/newpass"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/btn_toogle"
+        android:checked="false"
+        android:text="ToggleButton"
+        android:textAllCaps="false"
+        android:textIsSelectable="false"
+        android:textOff=" "
+        android:textOn=" "
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/passedit"
+        app:layout_constraintEnd_toEndOf="@+id/passedit"
+        app:layout_constraintTop_toTopOf="@+id/passedit" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="onClickGotoMainActivity"
+        android:text="@string/textready"
+        android:textColor="@color/TextBlue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.solovyevs.memonotes.KeyboardFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passedit" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="40dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

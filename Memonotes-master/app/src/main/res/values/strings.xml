@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Memonotes</string>
+    <string name="bodytext">Тело заметки</string>
+    <string name="dealdine">Сроки</string>
+    <string name="title_notescreen">Заметки</string>
+    <string name="newnote">Создание или редактирование</string>
+    <string name="textready">Готово</string>
+    <string name="title_for_new_note">Заголовок заметки</string>
+    <string name="date">Выбрать дату</string>
+    <string name="timechoose">Выбрать время</string>
+    <string name="dialog_ok">Удалить</string>
+    <string name="backarrow"><![CDATA[<-]]></string>
+    <string name="pinerror">Введен неверный пинкод</string>
+    <string name="pinedit">Введите новый пинкод:</string>
+    <string name="share">Поделиться</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="titleeditpass">Смена пинкода</string>
+    <string name="tv_oldpass">Введите старый пинкод</string>
+    <string name="createpin">Создайте пин код (4 символа)</string>
+
+    <!-- Preference Titles -->
+
+    <!-- Messages Preferences -->
+
+    <!-- Sync Preferences -->
+    <string name="sequrity">Безопасность</string>
+    <string name="edit_pin">Изменить пинкод</string>
+
+    <string name="exeption">Получено исключение</string>
+    <string name="str_restrict">Допускается ввод только 4 цифр</string>
+    <string name="diff_pin"> Введенный пинкод не совпадает с текущим, введите еще раз</string>
+    <string name="change_pin"> Пинкод был изменен</string>
+    <string name="created_pin"> Пинкод создан</string>
+    <string name="check_pin"> Текущий пинкод верен, введите новый и нажмите Готово</string>
+
+
+
+
+
+
+
+
+</resources>

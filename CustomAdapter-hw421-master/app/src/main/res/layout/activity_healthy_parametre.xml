@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HealthyParametre">
+
+    <ImageView
+        android:id="@+id/imageBgTitle2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ic_medapp"
+        app:srcCompat="@color/backgr_title" />
+
+    <TextView
+        android:id="@+id/numRunLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/num_run_label"
+        android:textSize="14sp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weightLabel" />
+
+    <EditText
+        android:id="@+id/weightValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/default_value_text"
+        android:inputType="textPersonName"
+        android:textColor="?attr/colorControlHighlight"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageBgTitle2" />
+
+    <EditText
+        android:id="@+id/numRunValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/default_value_text"
+        android:inputType="textPersonName"
+        android:textColor="?attr/colorControlHighlight"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weightValue" />
+
+    <ImageView
+        android:id="@+id/imageBgTitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="97dp"
+        app:layout_constraintBottom_toTopOf="@+id/numRunValue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/backgr_title" />
+
+    <ImageView
+        android:id="@+id/ic_medapp"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_medapp_red_foreground" />
+
+    <TextView
+        android:id="@+id/nameTitileActivity3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/healthy_acticity_title"
+        android:textColor="#F1F5EA"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/ic_medapp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="162dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="226dp"
+        android:background="@color/backgr_title"
+        android:text="@string/btn_save"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numRunLabel" />
+
+    <Button
+        android:id="@+id/profilBtn2"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/backgr_title"
+        android:text="@string/btn_profil"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saveBtn" />
+
+    <TextView
+        android:id="@+id/weightLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/weight_label"
+        android:textSize="14sp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageBgTitle2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

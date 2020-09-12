@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Internal-hw522</string>
+    <string name="memory_mode">Хранить логин во внешнем хранилище</string>
+</resources>

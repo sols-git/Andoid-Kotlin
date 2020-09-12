@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AlternativeCheckBox-hm2.1.1</string>
+    <string name="app_inputMoney">Ввод денег</string>
+    <string name="app_inputInfo">Информация об оплате</string>
+    <string name="app_btnOK">OK</string>
+    <string name="app_bankCardChkBx">С банковской карты</string>
+    <string name="app_mobilePhoneChkBx">С мобильного телефона</string>
+    <string name="app_cashAddressChkBx">Наличными по адресу</string>
+    <string name="app_tost">Взаимоисключающие CheckBox-ы успешно реализованы</string>
+
+
+</resources>

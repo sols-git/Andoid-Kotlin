@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageBgTitle"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nameTitile"
+        app:srcCompat="@color/backgr_title" />
+
+    <ImageView
+        android:id="@+id/ic_medapp"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_medapp_red_foreground" />
+
+    <TextView
+        android:id="@+id/nameTitile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/app_name"
+        android:textColor="#F1F5EA"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageBgTitle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/user_name"
+        app:layout_constraintStart_toStartOf="@+id/editName"
+        app:layout_constraintTop_toBottomOf="@+id/imageBgTitle" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="27dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/user_name_edit"
+        android:textColor="@android:color/darker_gray"
+        android:textColorLink="@color/backgr_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userNameLabel" />
+
+    <TextView
+        android:id="@+id/userAgeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/user_age"
+        app:layout_constraintStart_toStartOf="@+id/editAge"
+        app:layout_constraintTop_toBottomOf="@+id/editName" />
+
+    <EditText
+        android:id="@+id/editAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/default_value_text"
+        android:textColor="@android:color/darker_gray"
+        android:textColorLink="@color/backgr_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userAgeLabel" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="160dp"
+        android:background="@color/backgr_title"
+        android:text="@string/btn_save"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editAge" />
+
+    <Button
+        android:id="@+id/prerssRecBtn"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="27dp"
+        android:background="@color/backgr_title"
+        android:text="@string/btn_press_rec"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saveBtn" />
+
+    <Button
+        android:id="@+id/healthyRecBtn"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="27dp"
+        android:background="@color/backgr_title"
+        android:text="@string/btn_healty_rec"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prerssRecBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

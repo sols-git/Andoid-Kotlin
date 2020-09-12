@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">КОМПЛЕКСНАЯ СИСТЕМА МОНИТОРИНГА ЗДОРОВЬЯ</string>
+    <string name="user_name">ФИО</string>
+    <string name="user_name_edit">введите вашу фамилию,имя,отчетство</string>
+    <string name="user_age">Возраст</string>
+    <string name="user_age_edit">введите ваш возраст</string>
+    <string name="btn_save">Сохранить</string>
+    <string name="btn_press_rec">Записать показатели давления</string>
+    <string name="btn_healty_rec">Записать показатели здоровья</string>
+    <string name="pressure_acticity_title">ПОКАЗАТЕЛИ ДАВЛЕНИЯ</string>
+    <string name="pressure_hi_label">Верхнее давление</string>
+    <string name="pressure_low_label">Нижнее давление</string>
+    <string name="pulse_label">Пульс</string>
+    <string name="takchicardiya_label">Тахикардия</string>
+    <string name="time_label">Дата и время</string>
+    <string name="default_value_text">введите значение</string>
+    <string name="healthy_acticity_title">ПОКАЗАТЕЛИ ЗДОРОВЬЯ</string>
+    <string name="weight_label">Вес</string>
+    <string name="num_run_label">Количество шагов</string>
+    <string name="btn_profil">Вернуться в профиль</string>
+    <string name="tost_text_data_saved">Данные записаны</string>
+
+
+
+
+</resources>

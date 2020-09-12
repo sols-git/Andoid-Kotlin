@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AltChBoxActivity">
+
+    <EditText
+        android:id="@+id/inputMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/app_inputMoney"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/inputInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/app_inputInfo" />
+
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_btnOK" />
+
+    <CheckBox
+        android:id="@+id/bankCardChkBx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_bankCardChkBx" />
+
+    <CheckBox
+        android:id="@+id/mobilePhoneChkBx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_mobilePhoneChkBx" />
+
+    <CheckBox
+        android:id="@+id/cashAddressChkBx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_cashAddressChkBx" />
+
+
+</LinearLayout>

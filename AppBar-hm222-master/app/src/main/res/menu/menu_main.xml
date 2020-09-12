@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress AndroidMissingOnClickHandler -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/Settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_maedapp"
+        android:onClick="onClickMedapp"
+        android:orderInCategory="100"
+        android:title="@string/app_name_medapp"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_altcheck"
+        android:onClick="onClickAltCheck"
+        android:orderInCategory="100"
+        android:title="@string/checkboxapp"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_spiner"
+        android:onClick="onClickSpinerStart"
+        android:orderInCategory="100"
+        android:title="@string/app_name_spiner"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_calendarr"
+        android:onClick="onClickTaskStart"
+        android:orderInCategory="100"
+        android:title="@string/app_taskdate"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_open_notes"
+        android:orderInCategory="100"
+        android:title="@string/notepad"
+        android:onClick="onClickNotePadBtnMenu"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MapIntent-hm721</string>
+    <string name="pintext">Введите координаты или название объекта</string>
+    <string name="btnmap">Открыть карту</string>
+</resources>

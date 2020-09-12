@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CallSMSIntent-hw722</string>
+    <string name="tnumb">Введите номер телефона</string>
+    <string name="messagetext">Введите текст сообщения</string>
+    <string name="callbtn">Звоним</string>
+    <string name="sendsms">Отправляем</string>
+</resources>
